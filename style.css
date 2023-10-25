@@ -3,6 +3,7 @@
     10/23/2023
     Mo Lee
 */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -140,13 +141,14 @@ form {
 }
 
 label {
-    display: block;
+    display:inline-block;
+    width:30%;
     margin: 0.5rem 0;
 }
 
 input {
     margin: 10px 0 0 0;
-    width:100%;
+    width: 70%;
     min-height:2em;
 }
 
@@ -156,6 +158,15 @@ input[type="submit"] {
     margin: 1em auto;
     height: 3em;
     font-size: 1.1rem;
+}
+
+.actionPage {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 80vw;
+  text-align: center;
+  margin: 50px 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -210,13 +221,4 @@ input[type="submit"] {
     border-bottom: 100px solid rgb(99, 179, 99);
     z-index: 2;
   }
-}
-
-.actionPage {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  width: 80vw;
-  text-align: center;
-  margin: 50px 0;
 }
